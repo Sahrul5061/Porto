@@ -9,10 +9,17 @@
     <!-- My Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link href="dist/output.css" rel="stylesheet" />
     <script>
-      if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
         document.documentElement.classList.add("dark");
       } else {
         document.documentElement.classList.remove("dark");
@@ -21,17 +28,32 @@
   </head>
   <body>
     <!-- Header Start -->
-    <header class="absolute top-0 left-0 z-10 flex w-full items-center bg-transparent">
+    <header
+      class="absolute left-0 top-0 z-10 flex w-full items-center bg-transparent"
+    >
       <div class="container">
         <div class="relative flex items-center justify-between">
           <div class="px-4">
-            <a href="#home" class="block py-6 text-lg font-bold text-primary">Sahrul Rohmat Sidik</a>
+            <a href="#home" class="block py-6 text-lg font-bold text-primary"
+              >Sahrul Rohmat Sidik</a
+            >
           </div>
           <div class="flex items-center px-4">
-            <button id="hamburger" name="hamburger" type="button" class="absolute right-4 block lg:hidden">
-              <span class="hamburger-line origin-top-left transition duration-300 ease-in-out"></span>
-              <span class="hamburger-line transition duration-300 ease-in-out"></span>
-              <span class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"></span>
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="absolute right-4 block lg:hidden"
+            >
+              <span
+                class="hamburger-line origin-top-left transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line origin-bottom-left transition duration-300 ease-in-out"
+              ></span>
             </button>
             <nav
               id="nav-menu"
@@ -39,27 +61,44 @@
             >
               <ul class="block lg:flex">
                 <li class="group">
-                  <a href="#home" class="mx-8 flex py-2 text-base text-darks group-hover:text-primary dark:text-white">Home</a>
+                  <a
+                    href="#home"
+                    class="mx-8 flex py-2 text-base text-darks group-hover:text-primary dark:text-white"
+                    >Home</a
+                  >
                 </li>
                 <li class="group">
-                  <a href="#about" class="mx-8 flex py-2 text-base text-darks group-hover:text-primary dark:text-white">About Me</a>
+                  <a
+                    href="#about"
+                    class="mx-8 flex py-2 text-base text-darks group-hover:text-primary dark:text-white"
+                    >About Me</a
+                  >
                 </li>
                 <li class="group">
-                  <a href="#portofolio" class="mx-8 flex py-2 text-base text-darks group-hover:text-primary dark:text-white">Portofolio</a>
+                  <a
+                    href="#portofolio"
+                    class="mx-8 flex py-2 text-base text-darks group-hover:text-primary dark:text-white"
+                    >Portofolio</a
+                  >
                 </li>
                 <li class="group">
-                  <a href="#blog" class="mx-8 flex py-2 text-base text-darks group-hover:text-primary dark:text-white">Blog</a>
-                </li>
-                <li class="group">
-                  <a href="#contact" class="mx-8 flex py-2 text-base text-darks group-hover:text-primary dark:text-white">Contact Me</a>
+                  <a
+                    href="#contact"
+                    class="mx-8 flex py-2 text-base text-darks group-hover:text-primary dark:text-white"
+                    >Contact Me</a
+                  >
                 </li>
                 <li class="mt-3 flex items-center pl-8 lg:mt-0">
                   <div class="flex">
                     <span class="mr-2 text-sm text-slate-500">Light</span>
                     <input type="checkbox" class="hidden" id="dark-toggle" />
                     <label for="dark-toggle">
-                      <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
-                        <div class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-out"></div>
+                      <div
+                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
+                      >
+                        <div
+                          class="toggle-circle h-4 w-4 rounded-full bg-white transition duration-300 ease-out"
+                        ></div>
                       </div>
                     </label>
                     <span class="ml-2 text-sm text-slate-500">dark</span>
@@ -77,20 +116,51 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="w-full self-center px-4 lg:w-1/2">
-            <h1 class="text-2xl font-semibold text-primary dark:text-white md:text-4xl lg:text-5xl">
-              Hi 🙌, I'm <span class="mt-1 block max-w-xl text-4xl font-bold text-darks dark:text-white md:text-5xl lg:my-2 lg:text-5xl">Sahrul Rohmat Sidik</span>
+            <h1
+              class="text-2xl font-semibold text-primary dark:text-white md:text-4xl lg:text-5xl"
+            >
+              Hi 🙌, I'm
+              <span
+                class="mt-1 block max-w-xl text-4xl font-bold text-darks dark:text-white md:text-5xl lg:my-2 lg:text-5xl"
+                >Sahrul Rohmat Sidik</span
+              >
             </h1>
-            <h2 class="mb-5 text-lg font-medium text-slate-500 dark:text-white md:text-2xl lg:text-4xl">
-              Front End <span class="bg-gradient-to-r from-sky-400 to-red-500 bg-clip-text text-transparent md:text-2xl lg:text-4xl">Devloper</span>
+            <h2
+              class="mb-5 text-lg font-medium text-slate-500 dark:text-white md:text-2xl lg:text-4xl"
+            >
+              Front End
+              <span
+                class="bg-gradient-to-r from-sky-400 to-red-500 bg-clip-text text-transparent md:text-2xl lg:text-4xl"
+                >Devloper</span
+              >
             </h2>
-            <p class="mb-10 font-medium leading-relaxed text-slate-500 dark:text-white lg:text-2xl">This website is my biodata and what website projects I have worked on.</p>
-            <a href="#" class="rounded-full bg-primary py-3 px-8 text-base text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg">Contact Me</a>
+            <p
+              class="mb-10 font-medium leading-relaxed text-slate-500 dark:text-white lg:text-2xl"
+            >
+              This website is my biodata and what website projects I have worked
+              on.
+            </p>
+            <a
+              href="#"
+              class="rounded-full bg-primary px-8 py-3 text-base text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+              >Contact Me</a
+            >
           </div>
           <div class="w-full self-end px-4 lg:w-1/2">
             <div class="relative mt-16 lg:right-0 lg:mt-9">
-              <img src="dist/img/sahrul.png" alt="sahrul" class="relative z-10 mx-auto max-w-full" />
+              <img
+                src="dist/img/sahrul.png"
+                alt="sahrul"
+                class="relative z-10 mx-auto max-w-full"
+              />
               <span class="absolute -bottom-0 left-1/2 -translate-x-1/2"
-                ><svg width="400" height="400" class="md:h-[550px] md:w-[550px]" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                ><svg
+                  width="400"
+                  height="400"
+                  class="md:h-[550px] md:w-[550px]"
+                  viewBox="0 0 200 200"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <path
                     fill="#0ea5e9"
                     d="M70.3,-23.4C79.3,4.9,66.7,39.6,42.2,57.3C17.7,74.9,-18.8,75.4,-41.6,58.5C-64.5,41.6,-73.9,7.3,-64.7,-21.3C-55.5,-49.9,-27.7,-72.7,1.5,-73.1C30.7,-73.6,61.3,-51.7,70.3,-23.4Z"
@@ -109,19 +179,56 @@
       <div class="container">
         <div class="flex flex-wrap">
           <div class="mb-10 w-full px-4 lg:w-1/2">
-            <h4 class="text-lg font-bold uppercase text-primary lg:text-2xl">About Me</h4>
-            <p class="mt-2 mb-5 text-sm font-medium text-secondary dark:text-white lg:text-lg">I am very excited to start a career as a web Devloper and develop my skills in web development. I believe that working in a team and a commitment to continuous learning will help me grow in this industry.</p>
+            <h4 class="text-lg font-bold uppercase text-primary lg:text-2xl">
+              About Me
+            </h4>
+            <p
+              class="mb-5 mt-2 text-sm font-medium text-secondary dark:text-white lg:text-lg"
+            >
+              I am very excited to start a career as a web Devloper and develop
+              my skills in web development. I believe that working in a team and
+              a commitment to continuous learning will help me grow in this
+              industry.
+            </p>
           </div>
           <div class="w-full px-4 lg:w-1/2">
-            <h3 class="mb-4 text-3xl font-semibold text-darks dark:text-white lg:text-4xl">Let's be friends</h3>
+            <h3
+              class="mb-4 text-3xl font-semibold text-darks dark:text-white lg:text-4xl"
+            >
+              Let's be friends
+            </h3>
             <div class="flex items-center">
-                           <!-- Github -->
-             <a href="https://github.com/Sahrul5061?tab=repositories" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"> <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/> </svg>
-            </a>
+              <!-- Github -->
+              <a
+                href="https://github.com/Sahrul5061?tab=repositories"
+                target="_blank"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                  />
+                </svg>
+              </a>
               <!-- Linkded In -->
-              <a href="https://www.linkedin.com/in/sahrulrohmatsidik/"  class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
-                <svg role="img" class="fill-current" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <a
+                href="https://www.linkedin.com/in/sahrulrohmatsidik/"
+                class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <svg
+                  role="img"
+                  class="fill-current"
+                  width="20"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
                   <title>LinkedIn</title>
                   <path
                     d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
@@ -135,38 +242,51 @@
     </section>
     <!-- Abot Section End -->
 
-  
     <!-- Portofolio Start -->
-    <section id="portofolio" class="bg-slate-100 pt-36 pb-16 dark:bg-slate-800">
+    <section id="portofolio" class="bg-slate-100 pb-16 pt-36 dark:bg-slate-800">
       <div class="container">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 max-w-xl text-center">
             <h4 class="mb-2 text-lg font-semibold text-primary">Portofolio</h4>
-            <h2 class="mb-4 text-3xl font-bold text-darks dark:text-white">My Project</h2>
-            <p class="text-md font-medium text-secondary dark:text-white">this is a project i ever made</p>
+            <h2 class="mb-4 text-3xl font-bold text-darks dark:text-white">
+              My Project
+            </h2>
+            <p class="text-md font-medium text-secondary dark:text-white">
+              this is a project i ever made
+            </p>
           </div>
         </div>
         <div class="w-ful flex flex-wrap justify-center px-4">
           <div class="mb-12 p-4 md:w-1/2">
             <div class="overflow-hidden rounded-md shadow-md">
-              <img src="dist/img/portofolio/1.PNG" alt="webkopi" width="w-full" />
-              <a href="https://program.yarikpeduli.org/" class="mt-5 mb-3 block px-10 text-xl font-semibold text-darks hover:text-primary dark:text-white hover:dark:text-primary">Web Fundraising</a>
-              <p class="mb-10 px-10 text-base font-medium text-secondary dark:text-white">Web fundraising, or online fundraising, is the process of raising funds for a specific cause via the internet. It is a method used by non-profit organizations, individuals or groups to raise funds from a large number of people through online platforms. Online fundraising purposes can vary, including for charity, art projects, education, medical assistance, or business projects. </p>
+              <img
+                src="dist/img/portofolio/1.PNG"
+                alt="webkopi"
+                width="w-full"
+              />
+              <a
+                href="https://program.yarikpeduli.org/"
+                class="mb-3 mt-5 block px-10 text-xl font-semibold text-darks hover:text-primary dark:text-white hover:dark:text-primary"
+                >Web Fundraising</a
+              >
+              <p
+                class="mb-10 px-10 text-base font-medium text-secondary dark:text-white"
+              >
+                Web fundraising, or online fundraising, is the process of
+                raising funds for a specific cause via the internet. It is a
+                method used by non-profit organizations, individuals or groups
+                to raise funds from a large number of people through online
+                platforms. Online fundraising purposes can vary, including for
+                charity, art projects, education, medical assistance, or
+                business projects.
+              </p>
             </div>
           </div>
-      
         </div>
       </div>
     </section>
     <!-- Portofolio End -->
-    <!-- Skils start -->
-    <h3 class="mb-2 text-darks dark:text-white text-3xl">My Skills</h3>
-    <div class="w-ful flex mb-10 "><svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" id="html5"><path fill="#E44D26" d="M19.037 113.876l-10.005-112.215h109.936l-10.016 112.198-45.019 12.48z"></path><path fill="#F16529" d="M64 116.8l36.378-10.086 8.559-95.878h-44.937z"></path><path fill="#EBEBEB" d="M64 52.455h-18.212l-1.258-14.094h19.47v-13.762h-34.511l.33 3.692 3.382 37.927h30.799zM64 88.198l-.061.017-15.327-4.14-.979-10.975h-13.817l1.928 21.609 28.193 7.826.063-.017z"></path><path fill="#fff" d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zM63.952 24.599v13.762h33.244l.276-3.092.628-6.978.329-3.692z"></path></svg>
-      <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" id="css3"><path fill="#1572B6" d="M18.814 114.123l-10.054-112.771h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"></path><path fill="#33A9DC" d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"></path><path fill="#fff" d="M64.001 51.429h18.302l1.264-14.163h-19.566v-13.831h34.681999999999995l-.332 3.711-3.4 38.114h-30.95v-13.831z"></path><path fill="#EBEBEB" d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031h-13.882l1.937 21.717 28.331 7.863.063-.018v-14.39z"></path><path fill="#fff" d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881h-13.876z"></path><path fill="#EBEBEB" d="M64.048 23.435v13.831000000000001h-33.407999999999994l-.277-3.108-.63-7.012-.331-3.711h34.646zM64.001 51.431v13.831000000000001h-15.209l-.277-3.108-.631-7.012-.33-3.711h16.447z"></path></svg>
-      <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="java-script"><path fill="#6563ff" d="M11.181 2.213a1.677 1.677 0 0 1 1.637 0l7.479 4.225a1.54 1.54 0 0 1 .778 1.325v8.475a1.556 1.556 0 0 1-.836 1.354l-7.452 4.204a1.63 1.63 0 0 1-1.655-.046l-2.236-1.292a1.316 1.316 0 0 1-.432-.311c.095-.128.265-.144.403-.2a5.22 5.22 0 0 0 .883-.412.206.206 0 0 1 .23.014c.636.365 1.267.741 1.907 1.103.136.079.274-.026.39-.09q3.658-2.068 7.317-4.13a.242.242 0 0 0 .133-.238q.003-4.193.001-8.387a.262.262 0 0 0-.156-.261q-3.714-2.092-7.426-4.186a.258.258 0 0 0-.292 0Q8.141 5.452 4.43 7.547a.259.259 0 0 0-.157.26v8.387a.237.237 0 0 0 .135.235q.99.562 1.983 1.12a1.532 1.532 0 0 0 1.24.166.94.94 0 0 0 .609-.883c.003-2.78-.002-5.56.002-8.338a.21.21 0 0 1 .228-.214c.318-.002.635-.004.953.001a.22.22 0 0 1 .207.254c-.001 2.797.003 5.594-.002 8.39a2.127 2.127 0 0 1-.995 1.922 3.064 3.064 0 0 1-2.738-.075c-.727-.363-1.42-.79-2.133-1.18a1.553 1.553 0 0 1-.835-1.354V7.763a1.542 1.542 0 0 1 .804-1.342q3.726-2.103 7.451-4.208Z"></path><path fill="#6563ff" d="M13.348 8.083a5.88 5.88 0 0 1 3.218.493 2.434 2.434 0 0 1 1.187 2.106.228.228 0 0 1-.247.168c-.315 0-.629.004-.943-.002a.243.243 0 0 1-.228-.236 1.436 1.436 0 0 0-.687-.992 4.071 4.071 0 0 0-1.884-.27 2.558 2.558 0 0 0-1.349.336.855.855 0 0 0-.284.955c.101.24.378.317.605.388 1.306.342 2.69.308 3.97.757a1.87 1.87 0 0 1 1.23 1.095 2.338 2.338 0 0 1-.396 2.23 3.126 3.126 0 0 1-1.678.905 8.063 8.063 0 0 1-2.533.108 3.992 3.992 0 0 1-2.228-.839 2.338 2.338 0 0 1-.753-1.844.211.211 0 0 1 .231-.186c.317-.003.633-.004.95 0a.222.222 0 0 1 .226.22 1.439 1.439 0 0 0 .536 1.01 4.06 4.06 0 0 0 2.187.398 2.97 2.97 0 0 0 1.794-.439.99.99 0 0 0 .27-.946c-.078-.28-.37-.41-.621-.495-1.29-.408-2.688-.26-3.965-.72a1.93 1.93 0 0 1-1.218-1.063 2.175 2.175 0 0 1 .434-2.262 3.506 3.506 0 0 1 2.176-.875Z"></path></svg>
-      <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" id="vue-dot-js"><polygon points="1.026 23.567 1.025 23.559 1.024 23.556"></polygon><polygon fill="#41B883" points="0 1.651 12 22.35 24 1.651 19.2 1.651 12 14.07 4.74 1.651 0 1.651"></polygon><polygon fill="#35495E" points="4.74 1.651 12 14.13 19.2 1.651 14.76 1.651 12 6.45 9.18 1.651 4.74 1.651"></polygon><polygon fill="#39A072" points="4.74 1.651 0 1.651 12 22.35 12 14.13 4.74 1.651"></polygon><polygon fill="#2E4052" points="9.18 1.651 4.74 1.651 12 14.13 12 6.45 9.18 1.651"></polygon></svg></div>
-    
-    <!-- Skils End -->
+
     <!-- Blog Section Start
     <section id="blog" class="bg-slate-100 pt-36 pb-32 dark:bg-darks">
       <div class="container">
@@ -247,7 +367,7 @@
     </section> -->
     <!-- Contact Form End -->
     <!-- Footer Start -->
-    <footer class="bg-darks pt-24 pb-12">
+    <footer class="bg-darks pb-12 pt-24">
       <div class="container">
         <div class="flex flex-wrap">
           <div class="mb-12 w-full px-4 font-medium text-slate-300 md:w-1/3">
@@ -257,33 +377,108 @@
           </div>
 
           <div class="mb-12 w-full px-4 md:w-1/3">
-            <h3 class="mb-5 text-xl font-semibold text-white">Writing category</h3>
+            <h3 class="mb-5 text-xl font-semibold text-white">
+              Writing category
+            </h3>
             <ul class="text-slate-300">
-              <li><a href="#blog" class="mb-3 inline-block text-base hover:text-primary">Programing</a></li>
-              <li><a href="#blog" class="mb-3 inline-block text-base hover:text-primary">React Js</a></li>
-              <li><a href="#blog" class="mb-3 inline-block text-base hover:text-primary">Php</a></li>
+              <li>
+                <a
+                  href="#blog"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Programing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#blog"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >React Js</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#blog"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Php</a
+                >
+              </li>
             </ul>
           </div>
           <div class="mb-12 w-full px-4 md:w-1/3">
             <h3 class="mb-5 text-xl font-semibold text-white">Link</h3>
             <ul class="text-slate-300">
-              <li><a href="#home" class="mb-3 inline-block text-base hover:text-primary">Home</a></li>
-              <li><a href="#about" class="mb-3 inline-block text-base hover:text-primary">About me</a></li>
-              <li><a href="#portofolio" class="mb-3 inline-block text-base hover:text-primary">Portofolio</a></li>
-              <li><a href="#blog" class="mb-3 inline-block text-base hover:text-primary">Blog</a></li>
-              <li><a href="#contact" class="mb-3 inline-block text-base hover:text-primary">Contact</a></li>
+              <li>
+                <a
+                  href="#home"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >About me</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portofolio"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Portofolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#blog"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="mb-3 inline-block text-base hover:text-primary"
+                  >Contact</a
+                >
+              </li>
             </ul>
           </div>
         </div>
         <div class="w-full border-t border-slate-700 pt-10">
           <div class="mb-5 flex items-center justify-center">
-                         <!-- Github -->
-                         <a href="https://github.com/Sahrul5061?tab=repositories" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"> <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/> </svg>
-                        </a>
+            <!-- Github -->
+            <a
+              href="https://github.com/Sahrul5061?tab=repositories"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-github"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                />
+              </svg>
+            </a>
             <!-- Linkded In -->
-            <a href="https://www.linkedin.com/in/sahrulrohmatsidik/" target="_blank" class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white">
-              <svg role="img" class="fill-current" width="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <a
+              href="https://www.linkedin.com/in/sahrulrohmatsidik/"
+              target="_blank"
+              class="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-slate-300 text-slate-300 hover:border-primary hover:bg-primary hover:text-white"
+            >
+              <svg
+                role="img"
+                class="fill-current"
+                width="20"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <title>LinkedIn</title>
                 <path
                   d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
@@ -291,14 +486,24 @@
               </svg>
             </a>
           </div>
-          <p class="text-center text-sm font-medium text-slate-500">Created by <a href="#" target="_blank" class="font-bold text-primary">Sahrul Rohmat Sidik</a> , using Tailwind CSS</p>
+          <p class="text-center text-sm font-medium text-slate-500">
+            Created by
+            <a href="#" target="_blank" class="font-bold text-primary"
+              >Sahrul Rohmat Sidik</a
+            >
+            , using Tailwind CSS
+          </p>
         </div>
       </div>
     </footer>
     <!-- Footer End -->
     <!-- Back To Start -->
-    <a href="#home" id="to-top" class="fixed bottom-1 right-1 z-[99999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse">
-      <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
+    <a
+      href="#home"
+      id="to-top"
+      class="fixed bottom-1 right-1 z-[99999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse"
+    >
+      <span class="mt-2 block h-5 w-5 rotate-45 border-l-2 border-t-2"></span>
     </a>
     <!-- Back To End -->
     <script src="dist/js/script.js"></script>
