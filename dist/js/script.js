@@ -51,8 +51,30 @@ darkToggle.addEventListener("click", function () {
 
 // Pindahkan posisi toogle sesuai mode
 
-if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+if (
+  localStorage.theme === "dark" ||
+  (!("theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
+) {
   darkToggle.checked = true;
 } else {
   darkToggle.checked = false;
 }
+
+// Download Cv
+
+document.getElementById("downloadCv").addEventListener("click", function () {
+  // URL file yang akan diunduh
+  var fileURL = "./src/Cv/Cv.pdf";
+
+  // Nama file yang akan muncul saat diunduh
+  var fileName = "Cv";
+
+  // Buat elemen anchor untuk memicu unduhan
+  var a = document.createElement("a");
+  a.href = fileURL;
+  a.download = fileName;
+
+  // Simulasikan klik pada elemen anchor
+  a.click();
+});
