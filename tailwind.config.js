@@ -12,6 +12,7 @@ module.exports = {
         primary: "#0ea5e9",
         darks: "#0f172a",
         secondary: "#64748b",
+        reactjs: "#6297f4",
       },
       screens: {
         "2xl": "1320px",
